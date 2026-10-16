@@ -1,6 +1,6 @@
 # family_tree
 ## milestone1 output
-   ![Program output](Screenshot1.png)
+   ![Program output](Screenshot1.png.png)
 
 ## Program Output
    ![Program output](Screenshot2.png)
