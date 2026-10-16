@@ -62,7 +62,6 @@ int main(void) {
     "Father", "Mother", "Yourself"
 };
   
-   return 0; 
 
 Person *people[7];
 for (int i = 0; i < 7; i++) {
@@ -77,10 +76,8 @@ for (int i = 0; i < 7; i++) {
  link_parents(people[6], people[4], people[5]);
  print_family_relationships(people[6]);
 
+free_family_tree(people, 7);
 
-for (int i = 0; i < 7; i++) {
-    free(people[i]);
-}
 
 return 0;
 }
