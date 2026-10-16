@@ -1,4 +1,4 @@
 # family_tree
 ## Program Output
-   ![Program output](Screenshot3.png)
+   ![Program output](Screenshot4.png)
    
