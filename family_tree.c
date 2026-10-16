@@ -49,12 +49,21 @@ void print_family_relationships(const Person *me) {
     printf("- Grandfather: %s | Age: %d\n", me->mother->father->name, me->mother->father->age);
     printf("- Grandmother: %s | Age: %d\n", me->mother->mother->name, me->mother->mother->age);
 }
+void free_family_tree(Person *people[], int count) {
+    for (int i = 0; i < count; i++) {
+        free(people[i]);
+        people[i] = NULL;
+    }
+}
 int main(void) {
     const char *roles[7] = {
     "Paternal Grandfather", "Paternal Grandmother",
     "Maternal Grandfather", "Maternal Grandmother",
     "Father", "Mother", "Yourself"
 };
+  
+   return 0; 
+
 Person *people[7];
 for (int i = 0; i < 7; i++) {
     char name[50];
